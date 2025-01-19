@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.meet.jetnote"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.meet.jetnote"
