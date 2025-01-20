@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import com.meet.jetnote.data.NotesDataSource
 import com.meet.jetnote.screen.NoteScreen
 import com.meet.jetnote.ui.theme.JetNoteTheme
 
@@ -17,7 +18,7 @@ class MainActivity : ComponentActivity() {
             JetNoteTheme {
 
                 NoteScreen(
-                    notes = emptyList(),
+                    notes = NotesDataSource().loadNotes(),
                     onAddNote = {},
                     onRemoveNote = {}
                 )
