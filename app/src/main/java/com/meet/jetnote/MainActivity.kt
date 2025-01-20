@@ -16,7 +16,11 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetNoteTheme {
 
-                NoteScreen()
+                NoteScreen(
+                    notes = emptyList(),
+                    onAddNote = {},
+                    onRemoveNote = {}
+                )
 
             }
         }
