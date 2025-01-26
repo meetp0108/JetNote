@@ -144,7 +144,7 @@ fun NoteRow(
         //Log.d("NoteRow", "Clicked on Note: $note") // Log when a note is clicked
         onNoteClicked(note)
     },
-        color = Color(color = 0xFFCEB673),
+        color = Color(color = 0xFFF5CA5D),
         shadowElevation = 6.dp
     ) {
         Column(
